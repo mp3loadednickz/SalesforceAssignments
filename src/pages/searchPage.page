@@ -1,0 +1,13 @@
+<apex:page controller="searchClass">
+    <apex:form>
+        <apex:inputText value="{!searchString}" />
+        <apex:commandButton action="{!searchMethod}">
+        </apex:commandButton>
+        
+    </apex:form>
+    <apex:pageBlock>
+        <apex:pageBlockTable  value="{!searchMethod}">
+            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

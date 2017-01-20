@@ -1,0 +1,17 @@
+<apex:page controller="Acc">
+<apex:form>
+    <apex:pageBlock title="List of Accounts">
+        <apex:pageBlockTable value="{!m1}" var="tb" >
+                
+                
+                <apex:column value="{!tb.Name}">
+                <commandLink>
+                
+                </commandLink>
+                </apex:column>
+                <apex:column value="{!tb.Phone}" />
+                <apex:column value="{!tb.BillingCity}" />
+         </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>
